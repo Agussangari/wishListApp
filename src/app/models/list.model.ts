@@ -2,17 +2,17 @@ import { listItem } from "./list-item.model";
 
 export class List {
     id: number;
-    titulo: string;
+    title: string;
     createOn: Date;
     endOn: Date;
-    end: boolean;
+    finished: boolean;
     items: listItem[];
 
-    constructor(titulo: string){
+    constructor(title: string){
 
-        this.titulo = titulo;
+        this.title = title;
         this.createOn = new Date();
-        this.end = false;
+        this.finished = false;
         this.items = [];  
 
         this.id = new Date().getTime();
